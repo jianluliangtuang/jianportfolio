@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.roots{
+  --font-family1:"Epilogue", sans-serif;
+  --font-family2: "Rubik", sans-serif;
+  --color:rgb(15, 15, 221);
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Epilogue", sans-serif;
+}
+p {
+  font-family: "Rubik", sans-serif;
+}
+.Resume:hover{
+color: white !important;
+}
+
+
+  .footericon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#eaeeec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Social:hover{
+color: #198754 !important;
+  }

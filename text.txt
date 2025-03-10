@@ -1,0 +1,7 @@
+requirement in portfolio project.
+fontfamily:[rubik and epilogue]
+color: blue
+Header part
+theme:dark theme
+menu list[aboutme,project, experience,contact] 
+resume button

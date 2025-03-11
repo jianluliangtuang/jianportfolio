@@ -1,28 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("header.html")
-      .then((response) => response.text())
-      .then((data) => (document.getElementById("header").innerHTML = data));
-  
-    fetch("footer.html")
-      .then((response) => response.text())
-      .then((data) => (document.getElementById("footer").innerHTML = data));
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the current URL, removing any fragment
-    var documentUrl = document.location.href.replace(/#.*$/, "");
-  
-    // Iterate through all links
-    var linkEls = document.getElementsByTagName("A");
-    for (var linkIndex = 0; linkIndex < linkEls.length; linkIndex++) {
-      var linkEl = linkEls[linkIndex];
-  
-      // Ignore links that don't begin with #
-      if (!linkEl.getAttribute("href").match(/^#/)) {
-        continue;
-      }
-  
-      // Convert to an absolute URL
-      linkEl.setAttribute("href", documentUrl + linkEl.getAttribute("href"));
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let subject = document.getElementById("subject").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || mobile === "" || subject === "" || message === "") {
+        alert("Please fill in all fields.");
+        return;
     }
-  });
+
+    alert("Message Sent Successfully!");
+    document.getElementById("contactForm").reset();
+});
+
+function Troovely() {
+  window.open("", "_blank");
+}
+function rcfd() {
+  window.open("https://github.com/jianluliangtuang/bottle", "_blank");
+}
+function portfolio() {
+  window.open("https://github.com/jianluliangtuang/troovely.git", "_blank");
+}
+
+
